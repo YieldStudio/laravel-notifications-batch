@@ -1,0 +1,35 @@
+{
+    "name": "yieldstudio/laravel-notifications-batch",
+    "description": "A Laravel to batch your notifications",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "YieldStudio\\NotificationsBatch\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YieldStudio\\NotificationsBatch\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/notifications": "^10.0|^11.0|^12.0",
+        "illuminate/database": "^10.0|^11.0|^12.0",
+        "illuminate/console": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "orchestra/testbench": "^8.0|^9.0|^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YieldStudio\\NotificationsBatch\\NotificationsBatchServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
